@@ -16,3 +16,4 @@ Each week each member tries to solve 3 problems and discuss them with each other
 * [Google Python Style Guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html)
 
 ### Week 1
+-----
