@@ -1,6 +1,7 @@
 /* SPOJ: Prime Generator ID:2 / 
  * Running time: 3.01s Memory:3.4M
  * written by Yao Zhao
+ * Date: March 16, 2014
  * Thanks to Haoming, giving me a lot of help on this. 
  */
 #include <iostream>
