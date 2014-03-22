@@ -35,3 +35,9 @@ Yao:
 ### Member Notice
 Please include the url of the problem in the solution.
 Even if it's given by others!
+Please have the following documented at the top of the program:
+* **Qestion from**
+* Author
+* Date
+* Time complexity
+The format is not very important as long as the information is there.
