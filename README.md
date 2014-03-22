@@ -14,8 +14,8 @@ Each week each member tries to solve 3 problems and discuss them with each other
 
 ### Sites
 * [Sphere Online Judge (SPOJ)](http://www.spoj.com)
-* [PKU Online Judge (POJ)](poj.org)
-* [UVa Online Judge](<a href='uva.onlinejudge.org'>)
+* [PKU Online Judge (POJ)](http://poj.org)
+* [UVa Online Judge](http://uva.onlinejudge.org)
 
 ### Python Style Guide
 * [Google Python Style Guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html)
