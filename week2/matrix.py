@@ -1,5 +1,6 @@
 """ Jing 20/3 2014
 this is just an answer to a question on stackoverflow... Go vote me up...
+http://stackoverflow.com/questions/22550302/find-neighbors-in-a-matrix-using-python/
 """
 a = [[ 11,  21,  31,  41,  51,  61,  71],
    [ 12,  22,  32,  42,  52,  62,  72],
