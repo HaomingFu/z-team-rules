@@ -23,6 +23,7 @@ Each week each member tries to solve 3 problems and discuss them with each other
 
 ### Week 1
 Problems solved:
+
 Jing:
 * [ONP](http://www.spoj.com/submit/ONP/)
 
@@ -40,4 +41,5 @@ Please have the following documented at the top of the program:
 * Author
 * Date
 * Time complexity
+
 The format is not very important as long as the information is there.
