@@ -1,17 +1,19 @@
 ## Z-team
-This repo is originally used by Yao and Zhou to prepare for programming contest at school.
-Then a new member is added :Huan Fu(Hehui, China)
+
+This repo is originally used by Yao and Zhou to prepare for programming contests at school.
+
+Then a new member joined: Huan Fu(Hehui, China)
 
 Members: Yao Zhao & Jing Zhou, Huan Fu
 
-Keep track of problems z-team practiced
+Keep track of problems they practice every week
 
 ### The Plan
-Each week each member tries to solve 3 problems and discuss them with each other.
+Each week each member tries to solve 3 problems and discuss them with each other if necessary.
 
 
 ### Sites
-* [Sphere Online Judge (SPOJ)](www.spoj.com)
+* [Sphere Online Judge (SPOJ)](http://www.spoj.com)
 * [PKU Online Judge (POJ)](poj.org)
 * [UVa Online Judge](<a href='uva.onlinejudge.org'>)
 
