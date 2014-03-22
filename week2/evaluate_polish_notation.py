@@ -2,9 +2,9 @@
 Jing 3/20, 2014
 http://oj.leetcode.com/problems/evaluate-reverse-polish-notation/
 Note in the OJ collections is imported so just use q = collections.deque() is fine :)
+Also in this case a using a list is also perfectly fine.
 """
-from collections import deque
-q = deque()
+q = collections.deque()
 tokens = ["4", "13", "5", "/", "+"]
 for val in tokens:
     if val not in ['+', '-', '*', '/']:
