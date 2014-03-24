@@ -31,7 +31,8 @@ public:
             temp->val = head->val;
             head->val = value;
             temp = head->next;
-            head = head->next;
+            if(head->next)
+                head = head->next;
         }
         return fixed;
     }
@@ -40,10 +41,14 @@ public:
 int main(){
     ListNode* mylist = new ListNode(1);
     mylist->next = new ListNode(2);
+    mylist->next->next = new ListNode(3);
+    mylist->next->next->next = new ListNode(4);
 
     Solution mysolution;
     mylist=mysolution.swapPairs(mylist);
     cout<<mylist->val<<endl<<mylist->next->val<<endl;
+    cout<<mylist->next->next->val<<endl;
+    cout<<mylist->next->next->next->val<<endl;
 
     return 0;
 }
