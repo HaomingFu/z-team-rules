@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+---tle,pass the data test
+Refer to: http://sxyd.sdut.edu.cn/zhanshi/shuzhifenxi/shuzhifenxi/5.2/szfx052.htm
+STATUS:TLE
+DATE：April 5, 2014
+From: http://www.spoj.com/submit/CMPLS/
+"""
 from re import match
 import sys
 
