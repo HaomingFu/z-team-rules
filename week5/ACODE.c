@@ -2,6 +2,15 @@
 #include <stdlib.h>
 #include <string.h>
 #define MAXN 5005
+/*
+Using simple DP
+Referred to:http://community.topcoder.com/tc?module=Static&d1=tutorials&d2=dynProg
+TIME: 0s MEM：1.6M 
+STATUS:Accepted
+DATE：April 12, 2014
+From: http://www.spoj.com/submit/ACODE/
+__author__ = 'frankfu'
+*/
 
 char acode[MAXN];
 int main()
