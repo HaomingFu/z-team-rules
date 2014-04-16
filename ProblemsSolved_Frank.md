@@ -1,4 +1,3 @@
-
 ##week3
  1. [ONP](http://www.spoj.com/problems/ONP/)-AC-python
 
