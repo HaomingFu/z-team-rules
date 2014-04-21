@@ -22,7 +22,9 @@
   
   [Mathematics for Computer Science](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/)
 
-### ...
+### Reading materials
+
+- [Dynamci programming](http://www.cs.berkeley.edu/~vazirani/algorithms/chap6.pdf)
 
 ###Tools
 
