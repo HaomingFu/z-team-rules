@@ -1,3 +1,11 @@
+/*
+ * sort helps a lot
+TIME: 6.86s MEM：2.8M 
+STATUS: Accepted
+DATE：May 2, 2014
+From: http://www.spoj.com/problems/ABCDEF/
+__author__ = 'frankfu'
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
