@@ -1,4 +1,3 @@
-
 ## Useful Resources
 
 ### Websites
@@ -25,6 +24,8 @@
 ### Reading materials
 
 - [Dynamci programming](http://www.cs.berkeley.edu/~vazirani/algorithms/chap6.pdf)
+- [Sorting Algorithms](http://www.cplusplus.com/faq/sequences/sequencing/sort-algorithms/)
+- [introsort](http://www.cplusplus.com/faq/sequences/sequencing/sort-algorithms/introsort/)
 
 ###Tools
 
