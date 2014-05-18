@@ -4,8 +4,11 @@ Author: Jing Zhou
 Date: May 10, 2014
 Thought: too easy...
 """
+
+
 class Solution:
     # @return an integer
+
     def atoi(self, str):
         new_str = str.strip()
         end = ""
