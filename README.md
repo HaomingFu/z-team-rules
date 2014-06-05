@@ -1,15 +1,12 @@
-## Z-team
+## problems practicing repo
 
-This repo is originally used by Yao and Zhou to prepare for programming contests at school.
-
-Then a new member joined: Huanhuan Fu(Hehui, China)
 
 Members: Yao Zhao & Jing Zhou, Huanhuan Fu
 
 Keep track of problems they practice every week
 
 ### The Plan
-Each week each member tries to solve 3 problems and discuss them with each other if necessary.
+Each week each member tries to solve at least 3 problems and discuss them with each other if necessary.
 
 
 ### Sites
@@ -22,7 +19,7 @@ Each week each member tries to solve 3 problems and discuss them with each other
 * [PEP 8 -- Style Guide for Python Code](http://legacy.python.org/dev/peps/pep-0008/)
 
 
-### Member Notice
+### Notice
 Please include the url of the problem in the solution.
 Even if it's given by others!
 Please have the following documented at the top of the program:
