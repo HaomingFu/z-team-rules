@@ -2,8 +2,8 @@
 
 
 Members: Yao Zhao & Jing Zhou, Huanhuan Fu
-
 Keep track of problems they practice every week
+
 
 ### The Plan
 Each week each member tries to solve at least 3 problems and discuss them with each other if necessary.
@@ -29,3 +29,6 @@ Please have the following documented at the top of the program:
 * Time complexity
 
 The format is not very important as long as the information is there.
+
+### Be part of this
+If you want to be part of this practicing, email gnijuohz at gmail.com and request to be a contributor.
