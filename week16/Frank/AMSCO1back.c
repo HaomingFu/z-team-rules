@@ -1,5 +1,5 @@
 //~~more than 5kb to be modified
-//
+//it seems that I misunderstood the question
 //
 #include <stdio.h>
 #include <string.h>
