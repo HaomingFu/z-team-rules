@@ -24,7 +24,7 @@ class Solution:
         if total > target:
             return
         if total == target:
-            result.append(solution[::])
+            result.append(solution[:])
             return
         for i in range(depth, len(candidates)):
             total += candidates[i]

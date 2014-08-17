@@ -13,8 +13,8 @@ class Solution:
     # @return a list of lists of integers
     def permuteUnique(self, num):
         result, solution = [], []
-        num.sort()
         visited = [0]*len(num)
+        num.sort()
         self.generatePerm(num, 0, result, solution, visited)
         return result
 
