@@ -90,6 +90,41 @@ def insertionSortList(head):
                 q = q.next
     return head
 
+def reorderList(head):
+    if not head or not head.next:
+        return head
+    mid = findMid(head)
+    mid = reverse(mid)
+    start = head
+    while mid and start:
+        p = mid.next
+        mid.next = start.next
+        start.next = mid
+        mid = p
+        start = start.next.next
+    start = mid
+    return head
+def reverse(root):
+    new_root = None
+    while root:
+        nextNode = root.next
+        root.next = new_root
+        new_root = root
+        root = nextNode
+    return new_root
+
+def findMid(head):
+    p = head
+    q = head.next
+    while q:
+        q = q.next
+        if q:
+            q = q.next
+            p = p.next
+    res = p.next
+    p.next = None
+    return res
+
 def makeList(a):
     head = ListNode(a[0])
     p = head
@@ -106,16 +141,13 @@ def printList(head):
     print()
 
 def test():
-    a = [3,2,4]
+    a = [1, 2, 3, 4]
     head = makeList(a)
 
 
     #sortedA = sortList(head)
-    print("original list")
     printList(head)
-    print("sorting")
-    sortedList = insertionSortList(head)
-    print("after")
+    sortedList = reorderList(head)
     printList(sortedList)
 
 test()
