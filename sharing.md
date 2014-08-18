@@ -27,6 +27,11 @@
 - [Sorting Algorithms](http://www.cplusplus.com/faq/sequences/sequencing/sort-algorithms/)
 - [introsort](http://www.cplusplus.com/faq/sequences/sequencing/sort-algorithms/introsort/)
 
+#### Permutation
+
+- [next permutation](http://wordaligned.org/articles/next-permutation)
+
 ###Tools
 
  - Reeder(an app for Subscribing to RSS Feeds, it feels great reading there)
+
