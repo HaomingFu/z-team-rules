@@ -1,6 +1,8 @@
 ---
-layout: post
-title: the journey starts
+title: This will be used as the title-tag of the page head
 ---
 
-# Hello there
+hello
+=====
+
+**You are here!**
