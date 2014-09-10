@@ -9,19 +9,19 @@ There are some common operations/techniques on linked lists that you have to kno
 
 Here the node for a linked list in Python is as follows.[^1]
 
-```python
+{% highlight python %}
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-```
+{% endhighlight %}
 
 
 ### Reverse a linked list
 To reverse a linked list, you can use three pointers like this:
 
-```python
+{% highlight python %}
 def reverse(root):
   """
   reverse a linked list with three pointers.
@@ -34,7 +34,7 @@ def reverse(root):
     new_root = root
     root = nextNode
   return new_root
-```
+{% endhighlight %}
 
 ### Fast pointer, slower pointer
 By using two pointers, you can do a variety of things. For example, you can find the middle node in the list, detect cycle and find the last to `k` node.
