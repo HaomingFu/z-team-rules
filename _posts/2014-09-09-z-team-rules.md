@@ -1,6 +1,12 @@
 ---
 layout: post
-title: This will be used as the title-tag of the page head
+title: Trees and Graphs
 ---
 
+## Check if a tree is balanced
 
+
+## If there is a route between two nodes in a graph
+
+
+## Creat binary search tree with a sorted array
