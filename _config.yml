@@ -1,5 +1,5 @@
 # Jekyll configuration
 
-name: Architect Theme
+name: Algorithms
 markdown: redcarpet
 permalink:   /:categories/:title/
