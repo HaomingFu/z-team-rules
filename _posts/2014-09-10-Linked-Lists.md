@@ -37,8 +37,30 @@ def reverse(root):
 {% endhighlight %}
 
 ### Fast pointer, slower pointer
-By using two pointers, you can do a variety of things. For example, you can find the middle node in the list, detect cycle and find the last to `k` node.
+By using two pointers, you can do a variety of things. For example, you can find the middle node in the list, detect cycle and find the last to `k` node. The `fast` pointer isn't necessarily faster, it might just move before the `slow` one.
+#### Find the middle node
+{% highlight python %}
+def findMid(root):
+  """find the middle node of the list
+  """
+  p = root
+  q = root.next
+  while q:
+    q = q.next
+    if q:
+      q = q.next
+      p = p.next
+  
+  #return q.next
+  # if the linked list needed to be cut in half
+  res = q.next
+  q.next = None
+  return res
+{% endhighlight %}
+
+## Put into use
+
+### Cycle detection
 
 
-
-[^1] This is taken from [leetcode.com](https://oj.leetcode.com/)
+[^1]: This is taken from [leetcode.com](https://oj.leetcode.com/)
