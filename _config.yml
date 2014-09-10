@@ -3,3 +3,5 @@
 name: Algorithms
 markdown: redcarpet
 permalink:   /:categories/:title/
+
+baseurl: "z-team-rules"
