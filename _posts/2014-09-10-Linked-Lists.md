@@ -17,6 +17,10 @@ Here the node for a linked list in Python is as follows.[^1]
 #         self.next = None
 {% endhighlight %}
 
+### Remove a node
+This one is very basic. What you need to do is point the next pointer of the prev node to the next node.  
+Like this: `prev.next = prev.next.next`
+
 
 ### Reverse a linked list
 To reverse a linked list, you can use three pointers like this:
@@ -28,7 +32,7 @@ def reverse(root):
   root, new_root and next
   """
   new_root = None
-  while root:
+  while root is not None:
     nextNode = root.next
     root.next = new_root
     new_root = root
@@ -45,9 +49,9 @@ def findMid(root):
   """
   p = root
   q = root.next
-  while q:
+  while q is not None:
     q = q.next
-    if q:
+    if q is not None:
       q = q.next
       p = p.next
   
@@ -56,6 +60,32 @@ def findMid(root):
   res = q.next
   q.next = None
   return res
+{% endhighlight %}
+
+### Merge two sorted linked list
+
+This is a fairly common operation too.
+{% highlight python %}
+def mergeList(self, a, b):
+    if a is None:
+        return b
+    if b is None:
+        return a
+    if a.val < b.val:
+        head = a
+    else:
+        head = b
+        b = a
+        a = head
+    while a.next is not None and b is not None:
+        if a.next.val > b.val:
+            tmp = a.next
+            a.next = b
+            b = tmp
+        a = a.next
+    if a.next is None:
+        a.next = b
+    return head
 {% endhighlight %}
 
 ## Put into use
