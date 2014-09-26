@@ -1,3 +1,7 @@
+"""
+Author: Jing Zhou
+
+"""
 def sort_it(array):
     """takes a list of values of 1, 2, 3
     and return a sorted list
