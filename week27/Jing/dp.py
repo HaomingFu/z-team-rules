@@ -2,21 +2,21 @@
 dynamic programming for sequence alignment prolem
 """
 
-#def build_scoring_matrix(alphabet, diag_score, off_diag_score, dash_score):
-#    """
-#    build the scoring matrix
-#    """
-#    alphabet.add('-')
-#    scoring_matrix = {key: {} for key in alphabet}
-#    for char in alphabet:
-#        for second_char in alphabet:
-#            if '-' in (char, second_char):
-#                scoring_matrix[char][second_char] = dash_score
-#            elif char == second_char:
-#                scoring_matrix[char][second_char] = diag_score
-#            elif char != second_char:
-#                scoring_matrix[char][second_char] = off_diag_score
-#    return scoring_matrix
+def build_scoring_matrix(alphabet, diag_score, off_diag_score, dash_score):
+    """
+    build the scoring matrix
+    """
+    alphabet.add('-')
+    scoring_matrix = {key: {} for key in alphabet}
+    for char in alphabet:
+        for second_char in alphabet:
+            if '-' in (char, second_char):
+                scoring_matrix[char][second_char] = dash_score
+            elif char == second_char:
+                scoring_matrix[char][second_char] = diag_score
+            elif char != second_char:
+                scoring_matrix[char][second_char] = off_diag_score
+    return scoring_matrix
 
 def compute_alignment_matrix(seq_x, seq_y, scoring_matrix, global_flag):
     """
@@ -113,3 +113,13 @@ def compute_local_alignment(seq_x, seq_y, scoring_matrix, alignment_matrix):
         align_x = '-' + align_x
         l_col -= 1
     return (score, align_x, align_y)
+
+scoring_matrix = build_scoring_matrix(set('ACTG'), 10, 4, 10)
+seq_x = 'AAC'
+seq_y = 'TAAT'
+alignment_matrix_local =  compute_alignment_matrix(seq_x, seq_y, scoring_matrix, 0)
+alignment_matrix_global =  compute_alignment_matrix(seq_x, seq_y, scoring_matrix, 1)
+print 'global', alignment_matrix_global
+print 'local ', alignment_matrix_local
+print alignment_matrix_global[2][2]
+print alignment_matrix_local[2][2]
