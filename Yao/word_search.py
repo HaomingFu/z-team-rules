@@ -19,6 +19,7 @@ class Solution:
         return False
 
     def find(self, ix, jx, word, board, visited, m,n):
+        visited.append((ix,jx))
         print("ix = %d, jx = %d" % (ix, jx))
         print(visited)
         if len(word) == 1:
@@ -26,25 +27,35 @@ class Solution:
         if board[ix][jx]!=word[0]:
             return False
 
-        visited.append((ix,jx))
-        if jx < n-1 and (ix,jx+1) not in visited and board[ix][jx+1] == word[1]:
+        if jx < n-1 and (ix,jx+1) not in visited:
             if self.find(ix,jx+1,word[1:],board,visited, m,n):
                 return True
-        if jx > 0 and (ix, jx-1) not in visited and board[ix][jx-1] == word[1]:
+            else:
+                visited.remove((ix,jx+1))
+        if jx > 0 and (ix, jx-1) not in visited:
             if self.find(ix, jx-1, word[1:], board, visited, m, n):
                 return True
+            else:
+                visited.remove((ix, jx-1))
 
-        if ix < m-1 and (ix+1, jx) not in visited and board[ix+1][jx] == word[1]:
+        if ix < m-1 and (ix+1, jx) not in visited:
             if self.find(ix+1, jx, word[1:], board, visited, m, n):
                 return True
-        if ix > 0 and (ix-1, jx) not in visited and board[ix-1][jx] == word[1]:
+            else:
+                visited.remove((ix+1, jx))
+        if ix > 0 and (ix-1, jx) not in visited:
             if self.find(ix-1, jx, word[1:], board, visited, m, n):
                 return True
+            else:
+                visited.remove((ix-1, jx))
         return False
 
 
 
 board = ["abce", "sfes", "adee"]
 word3 = "abceseeefs"
+board2 = ['ab', 'cd']
+word2 = 'acdb'
 s = Solution()
-print(s.exist(board, word3))
+print(s.exist(board2, word2))
+
