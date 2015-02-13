@@ -5,7 +5,7 @@ class Solution:
         n = len(num)
         if n < 4:
             return []
-        pairSum = {}  
+        pairSum = {}
         for i in range(n-1):
             for j in range(i + 1, n):
                 sum = num[i] + num[j]
@@ -15,11 +15,12 @@ class Solution:
                     pairSum[sum] = s
                 else:
                     pairSum[sum].add((i,j))
-        
+        reSet = set()
+
         for aSum in pairSum.keys():
             if target - aSum not in pairSum:
                 continue
-            pairs = pairSum[sum]
+            pairs = pairSum[aSum]
             if target - aSum == aSum and len(pairs)==1:
                 continue
             nPairs = pairSum[target - aSum]
@@ -27,6 +28,14 @@ class Solution:
                 for bPair in nPairs:
                     if aPair == bPair:
                         continue
-                    temp = [aPair[0], aPair[1], bPair[0], bPair[1]]
-                    res.append(sorted(temp))
+                    if bPair[0] in aPair or bPair[1] in aPair:
+                        continue
+                    temp = sorted([num[aPair[0]], num[aPair[1]], num[bPair[0]], num[bPair[1]]])
+                    if temp not in res:
+                        res.append(temp)
         return res
+
+s = Solution()
+num = [1,0,-1,0,-2,2]
+target = 0
+print(s.fourSum(num, target))
